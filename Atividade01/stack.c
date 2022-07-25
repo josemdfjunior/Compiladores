@@ -27,7 +27,7 @@ void push(struct Stack* stack, int item)
      if (isFull(stack))
      return;
      stack->array[++stack->top] = item;
-     printf("%d pushed to stackn", item);
+     printf("%d pushed to stack\n", item);
 }
 int pop(struct Stack* stack)
 {
@@ -47,6 +47,6 @@ int main()
       push(stack, 11);
       push(stack, 12);
       push(stack, 33);
-      printf("%d popped from stackn", pop(stack));
+      printf("%d popped from stack\n", pop(stack));
       return 0;
 }
